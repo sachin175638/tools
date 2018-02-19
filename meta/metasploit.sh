@@ -4,7 +4,7 @@ echo "$gre scripted by sachin "
 sleep 2
 echo "$gre installing pakges>>>....."
 apt-get update -y
-app-get upgrade -y
+apt-get upgrade -y
 pkg install -y autoconf bison clang coreutils curl findutils git apr apr-util libffi-dev
 pkg install -y libpcap-dev libgmp-dev postgresql-dev readline-dev libsqlite-dev openssl-dev
 pkg install -y libtool libxml2-dev libxslt-dev ncurses-dev pkg-config postgresql-contrib
