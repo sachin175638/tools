@@ -42,13 +42,11 @@ do
 		git clone https://github.com/evait-security/weeman
 		apt-get install python2 -y
 		pip2 install bs4
-		ln -s $HOME/weeman/weeman.py /data/data/com.termux/files/usr/bin/weeman
 		clear
 		sleep 1
 		echo "$gre      ======================"
 		echo "$gre      successfully installed"
 		echo "$gre      ======================"
-		echo "$gre      execute weeman"
 	elif [ $selection -eq 3 ]
 	then
 		apt-get install git -y
