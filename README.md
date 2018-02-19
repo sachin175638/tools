@@ -1,3 +1,3 @@
 # tools
-chmod +x setup.sh
-sh setup.sh
+chmod +x tools.sh
+sh tools.sh
