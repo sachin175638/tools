@@ -11,9 +11,9 @@ pkg install -y libtool libxml2-dev libxslt-dev ncurses-dev pkg-config postgresql
 pkg install -y wget make ruby-dev libgrpc-dev termux-tools ncurses ncurses-utils libsodium-dev
 pkg install -y termux-exec
 cd $HOME
-curl -LO https://github.com/rapid7/metasploit-framework/archive/4.16.16.tar.gz
-tar -xf $HOME/4.16.16.tar.gz
-mv $HOME/metasploit-framework-4.16.16 $HOME/metasploit-framework
+curl -LO https://github.com/rapid7/metasploit-framework/archive/4.16.2.tar.gz
+tar -xf $HOME/4.16.2.tar.gz
+mv $HOME/metasploit-framework-4.16.2 $HOME/metasploit-framework
 cd metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -55,7 +55,7 @@ bundle install -j5
 $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 rm $HOME/metasploit-framework/modules/auxiliary/gather/http_pdf_authors.rb
 cd $HOME
-rm -rf 4.16.16.tar.gz
+rm -rf 4.16.2.tar.gz
 rm /data/data/com.termux/files/usr/bin/msfconsole
 rm /data/data/com.termux/files/usr/bin/msfvenom
 ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
