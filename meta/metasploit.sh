@@ -32,7 +32,7 @@ gem install bundler
 #gem install rbnacl-libsodium-1.0.13.gem
 #cd ..
 #rm -rf rbnacl-libsodium-1.0.13
-sed 's|nokogiri (*|nokogiri (1.8.0)|g' -i Gemfile.lock 
+sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock 
 gem install nokogiri -v 1.8.0 -- --use-system-libraries
 #echo "$gre ------------------"
 #echo "$gre       grpc"
